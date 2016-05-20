@@ -65,6 +65,6 @@ public class TestEmpleado {
         empSrvJPA.setEm(entityManager);
         empSrvJPA.asignarTarea(e, tarea);
         assertEquals(1, e.getTareasAsignadas().size());
-       // verify(e, times(1)).getTareasAsignadas();
+        verify(e, atLeast(1)).getTareasAsignadas();
     }
 }

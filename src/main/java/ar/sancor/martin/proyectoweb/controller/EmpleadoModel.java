@@ -45,7 +45,6 @@ public class EmpleadoModel   implements Serializable {
         empSrv.crear(emp);
     }
     public void guardar2(){
-        System.out.println("EJECUTA ! !! !"+emp);
         if(this.emp!=null){
             if( this.emp.getId()!=null && this.emp.getId()>0) {
                 empSrv.actualizar(emp);
