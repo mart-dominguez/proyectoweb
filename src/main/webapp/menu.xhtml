@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <body>
+        <ui:composition >
+<p:menubar>
+        <p:submenu label="Empleados" icon="ui-icon-document">
+            <p:menuitem value="Gestionar" outcome="empleados.xhtml" />
+            <p:separator />
+            <p:menuitem value="Asignar Habilidades" url="#" />
+            <p:menuitem value="Asignar Tareas" url="#" />
+        </p:submenu>
+ 
+        <p:submenu label="Proyectos" icon="ui-icon-pencil">
+            <p:menuitem value="Gestionar" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+            <p:menuitem value="Asignar Tareas" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+        </p:submenu>
+        <p:submenu label="Tareas" icon="ui-icon-pencil">
+            <p:menuitem value="Gestionar" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+            <p:menuitem value="Asignar Habilidades" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+        </p:submenu>
+ 
+        <p:submenu label="Habilidades" icon="ui-icon-pencil">
+            <p:menuitem value="Gestionar" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+        </p:submenu>
+
+        <f:facet name="options">
+            <p:inputText style="margin-right:10px" placeholder="Search"/>
+            <p:commandButton type="button" value="Logout" icon="ui-icon-extlink" />
+        </f:facet>
+    </p:menubar>
+        </ui:composition>
+    </body>
+</html>
